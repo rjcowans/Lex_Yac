@@ -1,0 +1,47 @@
+Project5
+Owner Richard Cowans
+Student Number: n01222478
+Due Date April 20, 2019
+
+
+Project Description:
+---------------------------------------------------------------------------------------------------------
+Hello Professor, this project is a bassterized version of SQL language. It takes in a file that could 
+poteninally pass the grammmar of the SQL syntax. Therefore it should print out either ACCEPT or REJECT.
+The tokens are generated through the all-mighty command of flex and then passed into the the heavy command
+of bison.
+----------------------------------------------------------------------------------------------------------
+
+Source Files
+----------------------------------------------------------------------------------------------------------
+sql.lex - This holds the tokenized version of what needs to be lexed
+out - the executable after the compilation of the code
+sy1.y - driver of the code and the grammar or parser of the code
+y.tab.h - header files for lexer to know what a token it
+----------------------------------------------------------------------------------------------------------
+
+Input Files
+----------------------------------------------------------------------------------------------------------
+[test]
+( S WHERE S# > 5 ) [ S# , S# , S# ] UNION  S WHERE COST > 5
+----------------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------------
+Output Files
+None everything is going to console
+----------------------------------------------------------------------------------------------------------
+
+Projected Output:
+
+ACCPET
+
+----------------------------------------------------------------------------------------------------------
+
+Execution: the shar would be named Proj4 with testfile named test2.txt
+
+Step 1: unshar Proj3
+Step 2: make
+Step 3: p5 test2.txt
+
+---------------------------------------------------------------------------------------------------------
+
